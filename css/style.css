@@ -8,6 +8,7 @@
     /* Color styles */
 --darkblue: #0084FD;
 --primarylight: #FFFFFF;
+--textgreycolor:#718aa0;
 --violet: #9792E4;
 --bg-lightblue: #B5DDFF;
 --darkfooter: #333333;
@@ -20,4 +21,75 @@ html {
 body {
     font-family: 'PT Sans', sans-serif;
 }
+header {
+    background-color: var(--darkblue);
+    width: 100%;
+    position:fixed;
+    top:0;
+    left:0;
+}
+nav {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height:100px;
+}
+main {
+    margin-top:140px;
+}
+
+.hambmenu i {
+    color:var(--primarylight);
+    font-size:1.5rem;
+    display:none;
+}
+
+.card {
+    background-color: var(--bg-lightblue);
+    border-radius:10px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.title {
+    font-weight: bold;
+    color:var(--darkblue);
+}
+
+.text {
+    font-weight: bold;
+    color:var(--textgreycolor);
+}
+
+
+/* MOBILE FIRST */
+@media only screen and (max-width: 480px) {
+ul li {
+    display:none;
+}
+
+.container {
+    width: 420px;
+    margin:0 auto;
+} 
+
+.hambmenu i {
+    display:block;
+}
+}
+.card {
+    width: 60%;
+    margin:0 auto;
+    padding:20px;
+}
+.flex {
+    display:flex;
+    flex-flow: column nowrap;
+    gap:30px;
+   
+}
+
+
 
