@@ -3,9 +3,21 @@
     padding:0;
     box-sizing: border-box;
 }
+
+:root {
+    /* Color styles */
+--darkblue: #0084FD;
+--primarylight: #FFFFFF;
+--violet: #9792E4;
+--bg-lightblue: #B5DDFF;
+--darkfooter: #333333;
+--accentcolor: #FDC15F;
+
+}
 html {
     scroll-behavior: smooth;
 }
 body {
     font-family: 'PT Sans', sans-serif;
 }
+
