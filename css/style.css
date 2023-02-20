@@ -204,9 +204,7 @@ section {
     object-fit: cover;
 }
 
-.quoted {
-    line-height: 20px;
-}
+
 
 .smalltitle {
     font-size: 1rem;
@@ -230,6 +228,10 @@ section {
 
 .m20 {
     margin-top: 20px;
+}
+
+.p20 {
+    padding:20px;
 }
 
 /* MOBILE FIRST */
