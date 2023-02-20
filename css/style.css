@@ -1,58 +1,80 @@
 * {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 :root {
     /* Color styles */
---darkblue: #0084FD;
---primarylight: #FFFFFF;
---textgreycolor:#718aa0;
---violet: #9792E4;
---bg-lightblue: #B5DDFF;
---darkfooter: #333333;
---accentcolor: #FDC15F;
+    --darkblue: #0084FD;
+    --primarylight: #FFFFFF;
+    --textgreycolor: #718aa0;
+    --violet: #9792E4;
+    --bg-lightblue: #B5DDFF;
+    --darkfooter: #333333;
+    --accentcolor: #FDC15F;
 
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 body {
     font-family: 'PT Sans', sans-serif;
 }
+
 header {
     background-color: var(--darkblue);
     width: 100%;
-    position:fixed;
-    top:0;
-    left:0;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
+
 nav {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    height:100px;
+    height: 100px;
 }
+
 main {
-    margin-top:140px;
+    margin-top: 100px;
+}
+
+img {
+    width: 100%;
+}
+
+ul li {
+    display: none;
+}
+
+section {
+    padding: 50px 0 50px 0;
+}
+
+.container {
+    width: 330px;
+    margin: 0 auto;
 }
 
 .hambmenu i {
-    color:var(--primarylight);
-    font-size:1.5rem;
-    display:none;
+    color: var(--primarylight);
+    font-size: 1.5rem;
 }
 
 .card {
     background-color: var(--bg-lightblue);
-    border-radius:10px;
-    padding-top:20px;
+    border-radius: 10px;
+    padding-top: 20px;
+    margin-bottom: 20px;
 
 }
 
 .card:not(#demo) {
-    padding-bottom:20px;
+    padding-bottom: 20px;
 }
 
 .card img {
@@ -61,80 +83,154 @@ main {
 
 .title {
     font-weight: bold;
-    color:var(--darkblue);
+    color: var(--darkblue);
 }
 
 .text {
     font-weight: bold;
-    color:var(--textgreycolor);
+    color: var(--textgreycolor);
     line-height: 24px;
 
 }
 
 
 .cardimg {
-    display:flex;
+    display: flex;
 }
 
 .button {
-    padding:15px;
+    padding: 15px;
     text-align: center;
     border-radius: 13px;
     background-color: var(--darkblue);
-    color:var(--primarylight);
+    color: var(--primarylight);
     text-decoration: none;
     font-weight: bold;
-    letter-spacing:4px;
+    letter-spacing: 4px;
 }
 
 .button i {
-    margin-right:4px;
+    margin-right: 4px;
 }
 
 
 .icon {
-    font-size:5rem;
+    font-size: 5rem;
     text-align: center;
-    color:var(--darkblue);
+    color: var(--darkblue);
 }
 
-/* MOBILE FIRST */
-@media only screen and (min-width: 425px) {
-ul li {
-    display:none;
+.planningtitle {
+    padding: 80px 0 20px 0;
+    font-size: 2rem;
+    color: var(--primarylight);
+    font-weight: bold;
 }
 
-.container {
-    width: 330px;
-    margin:0 auto;
-} 
-
-.hambmenu i {
-    display:block;
-}
+.even {
+    background-color: var(--violet);
 }
 
-.flex {
-    display:flex;
-    flex-flow: column nowrap;
-    gap:30px;
+.plan {
+    color: var(--primarylight);
+    font-weight: 300;
+    padding-bottom: 30px;
 }
 
-.contentcard {
-    width: 80%;
-    margin:0 auto;
+.testimonialbio {
+    line-height: 30px;
+    font-size: 1.2rem;
 }
 
-.card {
-    margin-bottom:20px;
+.bg-white {
+    background-color: var(--primarylight);
 }
 
-
+.white {
+    color: var(--primarylight);
+}
 
 .textcenter {
     text-align: center;
 }
 
-.m60 {
-    margin-bottom:60px;
+.contentcard {
+    width: 80%;
+    margin: 0 auto;
 }
+
+.flex {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 30px;
+}
+
+.black {
+    color: black;
+}
+
+.italicspaced {
+    line-height: 30px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.bradius {
+    border-radius: 50px;
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: var(--violet);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circleframe {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.circleframe img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.quoted {
+    line-height: 20px;
+}
+
+.smalltitle {
+    font-size: 1rem;
+}
+
+.bigtitle {
+    font-size: 2rem;
+}
+
+.violet {
+    color: var(--violet);
+}
+
+.bg-violet {
+    background-color: var(--violet);
+}
+
+.pb30 {
+    padding-bottom: 30px;
+}
+
+.m20 {
+    margin-top: 20px;
+}
+
+/* MOBILE FIRST */
+@media only screen and (min-width: 768px) {
