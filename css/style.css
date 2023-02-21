@@ -30,6 +30,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    z-index:10000;
 }
 
 nav {
@@ -151,6 +152,11 @@ section {
     font-size: 1.2rem;
 }
 
+.bioabout {
+    width: 50%;
+    font-weight: bold;
+}
+
 .bg-white {
     background-color: var(--primarylight);
 }
@@ -218,6 +224,12 @@ section {
     font-weight: bold;
 }
 
+.linkedin
+{
+    letter-spacing: 0px;;
+    padding:8px 25px 8px 25px;
+}
+
 
 .smalltitle {
     font-size: 1rem;
@@ -259,9 +271,24 @@ section {
     line-height: 35px;
 }
 
+
+/* QUOTES ON IMG */
 .nomargin {
     margin:0;
+    
 }
 
+.quotes {
+    position:relative;
+    width: 200px;
+    height: 200px;
+}
+
+.quotes span {
+    position:absolute;
+    top:-47px;
+    left:131px;
+    font-size:13rem;
+}
 /* MOBILE FIRST */
 @media only screen and (min-width: 768px) {
