@@ -24,20 +24,20 @@
             </div>
             <div class="hambmenu">
                 <i class="fa-solid fa-bars"></i>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
             </div>
+            <ul class="navflex">
+                <li><a href="#">Planning</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Abouts us</a></li>
+                <li><a class="buttonstart" href="#">Get Started</a></li>
+            </ul>
         </nav>
     </header>
     <main>
         <section class="container flexcards">
-            <div class="card" id="demo">
-                <div class="contentcard flex">
+            <div class="maincards card" id="demo">
+                <div class="contentcard flex" id="contentleft">
                     <h2 class="title">Get a demo application</h2>
                     <p class="text">Lorem ipsum dolor sit amet
                         consectetur adipisicing elit. Ratione
@@ -50,7 +50,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="maincards card">
                 <div class="contentcard flex textcenter">
                     <i class="fa-regular fa-file-code icon"></i>
                     <h2 class="title">Get a demo application</h2>
@@ -61,7 +61,7 @@
                         blanditiis.</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="maincards card">
                 <div class="contentcard flex textcenter">
                     <i class="fa-regular fa-file-code icon"></i>
                     <h2 class="title">Get a demo application</h2>
@@ -72,7 +72,7 @@
                         blanditiis.</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="maincards card">
                 <div class="contentcard flex textcenter">
                     <i class="fa-regular fa-file-code icon"></i>
                     <h2 class="title">Get a demo application</h2>
@@ -83,7 +83,7 @@
                         blanditiis.</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="maincards card">
                 <div class="contentcard flex textcenter">
                     <i class="fa-regular fa-file-code icon"></i>
                     <h2 class="title">Get a demo application</h2>
@@ -96,16 +96,18 @@
             </div>
         </section>
         <section class="even">
-            <div class="container">
-                <img src="img/planning1.png" alt="">
-                <h2 class="planningtitle">Strategic Planning</h2>
-                <p class="text plan">Egestas dui id ornare arcu odio. In tellus
-                    integer feugiat scelerisque varius morbi enim
-                    nunc. Habitasse platea dictumst quisque
-                    sagittis. Interdum velit euismod in
-                    pellentesque massa placerat duis. Quis
-                    viverra nibh cras pulvinar mattis.</p>
-                <div class="card bg-white bradius">
+            <div class="container strflex">
+                <div class="strategicontent">
+                    <img src="img/planning1.png" alt="">
+                    <h2 class="planningtitle">Strategic Planning</h2>
+                    <p class="text plan">Egestas dui id ornare arcu odio. In tellus
+                        integer feugiat scelerisque varius morbi enim
+                        nunc. Habitasse platea dictumst quisque
+                        sagittis. Interdum velit euismod in
+                        pellentesque massa placerat duis. Quis
+                        viverra nibh cras pulvinar mattis.</p>
+                </div>
+                <div class="card cardstrategic bg-white bradius">
                     <div class="contentcard flex textcenter">
                         <img src="img/planning2.png" alt="">
                         <h2 class="title black">Get a demo application</h2>
@@ -116,10 +118,10 @@
                         <div class="circle">
                             <i class="fa-solid fa-arrow-down-long"></i>
                         </div>
-
-
                     </div>
+
                 </div>
+            </div>
         </section>
         <section>
             <div class="container textcenter">
@@ -130,41 +132,47 @@
                     benefit they bring to our business.
                     Customer feedback is vital in
                     helping us to get it right.</p>
-                <div class="card bradius p20 bg-violet textcenter">
+                <div class="card bradius p20 flexstaff bg-violet textcenter">
                     <div class="circleframe">
                         <img src="img/testimonial1.jpg" alt="">
                     </div>
-                    <p class="testimonialbio white m20"><i class="quoted fa-solid fa-quote-left"></i>Vitae suscipit
-                        tellus mauris a
-                        diam maecenas sed enim ut.
-                        Mauris augue neque gravida in
-                        fermentum. Praesent semper
-                        feugiat nibh pulvinar proin.<i class="fa-solid fa-quote-right"></i></p>
-                    <h3 class="p20 white">NAT REYNOLDS</h3>
+                    <div class="staff">
+                        <p class="testimonialbio white m20"><i class="quoted fa-solid fa-quote-left"></i>Vitae suscipit
+                            tellus mauris a
+                            diam maecenas sed enim ut.
+                            Mauris augue neque gravida in
+                            fermentum. Praesent semper
+                            feugiat nibh pulvinar proin.<i class="fa-solid fa-quote-right"></i></p>
+                        <h3 class="p20 white">NAT REYNOLDS</h3>
+                    </div>
                 </div>
-                <div class="card bradius p20 bg-violet textcenter">
+                <div class="card bradius p20 flexstaff bg-violet textcenter">
                     <div class="circleframe">
                         <img src="img/testimonial1.jpg" alt="">
                     </div>
-                    <p class="testimonialbio white m20"><i class="quoted fa-solid fa-quote-left"></i>Vitae suscipit
-                        tellus mauris a
-                        diam maecenas sed enim ut.
-                        Mauris augue neque gravida in
-                        fermentum. Praesent semper
-                        feugiat nibh pulvinar proin.<i class="fa-solid fa-quote-right"></i></p>
-                    <h3 class="p20 white">NAT REYNOLDS</h3>
+                    <div class="staff">
+                        <p class="testimonialbio white m20"><i class="quoted fa-solid fa-quote-left"></i>Vitae suscipit
+                            tellus mauris a
+                            diam maecenas sed enim ut.
+                            Mauris augue neque gravida in
+                            fermentum. Praesent semper
+                            feugiat nibh pulvinar proin.<i class="fa-solid fa-quote-right"></i></p>
+                        <h3 class="p20 white">NAT REYNOLDS</h3>
+                    </div>
                 </div>
-                <div class="card bradius p20 bg-violet textcenter">
+                <div class="card bradius p20 flexstaff bg-violet textcenter">
                     <div class="circleframe">
                         <img src="img/testimonial1.jpg" alt="">
                     </div>
-                    <p class="testimonialbio white m20"><i class="quoted fa-solid fa-quote-left"></i>Vitae suscipit
-                        tellus mauris a
-                        diam maecenas sed enim ut.
-                        Mauris augue neque gravida in
-                        fermentum. Praesent semper
-                        feugiat nibh pulvinar proin.<i class="fa-solid fa-quote-right"></i></p>
-                    <h3 class="p20 white">NAT REYNOLDS</h3>
+                    <div class="staff">
+                        <p class="testimonialbio white m20"><i class="quoted fa-solid fa-quote-left"></i>Vitae suscipit
+                            tellus mauris a
+                            diam maecenas sed enim ut.
+                            Mauris augue neque gravida in
+                            fermentum. Praesent semper
+                            feugiat nibh pulvinar proin.<i class="fa-solid fa-quote-right"></i></p>
+                        <h3 class="p20 white">NAT REYNOLDS</h3>
+                    </div>
                 </div>
             </div>
         </section>
@@ -172,7 +180,7 @@
             <div class="container">
                 <h2 class="bigtitle textcenter white p20">Benefits of working with us</h2>
                 <div class="benefitscards">
-                    <div class="card bg-white">
+                    <div class="card singlecardb bg-white">
                         <div class="contentcard flex">
                             <span class="number violet">01</span>
                             <h2 class="violet title">Get a demo application</h2>
@@ -184,7 +192,7 @@
                             <a class="button benefbutton" href="#">more</a>
                         </div>
                     </div>
-                    <div class="card bg-white">
+                    <div class="card singlecardb bg-white">
                         <div class="contentcard flex">
                             <span class="number violet">01</span>
                             <h2 class="violet title">Get a demo application</h2>
@@ -196,7 +204,7 @@
                             <a class="button benefbutton" href="#">more</a>
                         </div>
                     </div>
-                    <div class="card bg-white">
+                    <div class="card singlecardb bg-white">
                         <div class="contentcard flex">
                             <span class="number violet">01</span>
                             <h2 class="violet title">Get a demo application</h2>
@@ -208,7 +216,7 @@
                             <a class="button benefbutton" href="#">more</a>
                         </div>
                     </div>
-                    <div class="card bg-white">
+                    <div class="card singlecardb bg-white">
                         <div class="contentcard flex">
                             <span class="number violet">01</span>
                             <h2 class="violet title">Get a demo application</h2>
@@ -220,7 +228,7 @@
                             <a class="button benefbutton" href="#">more</a>
                         </div>
                     </div>
-                    <div class="card bg-white">
+                    <div class="card singlecardb bg-white">
                         <div class="contentcard flex">
                             <span class="number violet">01</span>
                             <h2 class="violet title">Get a demo application</h2>
@@ -232,7 +240,7 @@
                             <a class="button benefbutton" href="#">more</a>
                         </div>
                     </div>
-                    <div class="card bg-white">
+                    <div class="card singlecardb bg-white">
                         <div class="contentcard flex">
                             <span class="number violet">01</span>
                             <h2 class="violet title">Get a demo application</h2>
@@ -248,64 +256,71 @@
             </div>
         </section>
         <section>
-            <div class="container">
-                <h2 class="titlexl pb30 violet">About us</h2>
-                <p class="text black lh35 smalltext pb30">Sample text. Click to Egestas egestas
-                    fringilla phasellus faucibus scelerisque
-                    eleifend donec pretium vulputate.
-                    Pharetra magna ac placerat vestibulum.
-                    Quam lacus suspendisse faucibus
-                    interdum posuere lorem. Egestas tellus
-                    rutrum tellus pellentesque eu tincidunt.
-                    Neque vitae tempus quam pellentesque
-                    nec. Vel elit scelerisque mauris
-                    pellentesque pulvinar pellentesque
-                    habitant morbi. Interdum velit euismod
-                    in pellentesque massa placerat duis.</p>
-                <p class="text black lh35 smalltext pb30">Quis viverra nibh cras pulvinar mattis.
-                    Ornare arcu dui vivamus arcu felis
-                    bibendum ut tristique. Pellentesque eu
-                    tincidunt tortor aliquam nulla facilisi
-                    cras fermentum odio. Dignissim diam
-                    quis enim lobortis scelerisque. Tellus
-                    molestie nunc non blandit massa enim.
-                    the text box. Click again or double click
-                    to start editing the text.</p>
-                <div class="quotes">
-                    <div class="circleframe nomargin">
-                        <img src="img/about.jpg" alt="">
-                        <span class="violet">&ldquo;</span>
+            <div class="container flexceo">
+                <div class="ceoabout">
+                    <h2 class="titlexl pb30 violet">About us</h2>
+                    <p class="text black lh35 smalltext pb30">Sample text. Click to Egestas egestas
+                        fringilla phasellus faucibus scelerisque
+                        eleifend donec pretium vulputate.
+                        Pharetra magna ac placerat vestibulum.
+                        Quam lacus suspendisse faucibus
+                        interdum posuere lorem. Egestas tellus
+                        rutrum tellus pellentesque eu tincidunt.
+                        Neque vitae tempus quam pellentesque
+                        nec. Vel elit scelerisque mauris
+                        pellentesque pulvinar pellentesque
+                        habitant morbi. Interdum velit euismod
+                        in pellentesque massa placerat duis.</p>
+                    <p class="text black lh35 smalltext pb30">Quis viverra nibh cras pulvinar mattis.
+                        Ornare arcu dui vivamus arcu felis
+                        bibendum ut tristique. Pellentesque eu
+                        tincidunt tortor aliquam nulla facilisi
+                        cras fermentum odio. Dignissim diam
+                        quis enim lobortis scelerisque. Tellus
+                        molestie nunc non blandit massa enim.
+                        the text box. Click again or double click
+                        to start editing the text.</p>
+                </div>
+                <div class="ceo">
+                    <div class="quotes">
+                        <div class="circleframe nomargin">
+                            <img src="img/about.jpg" alt="">
+                            <span class="violet">&ldquo;</span>
+                        </div>
                     </div>
+                    <div class="bioabout m20 pb30">
+                        <p class="violet bigtitle">I help companies
+                            tincidunt tortor aliquam
+                            nulla facilisi cras
+                            fermentum odio.</p>
+                    </div>
+                    <a class="button benefbutton linkedin smalltext" href="#"><i class="fa-brands fa-linkedin"></i>Find
+                        me
+                        on Linkedin</a>
                 </div>
-                <div class="bioabout m20 pb30">
-                    <p class="violet bigtitle">I help companies
-                        tincidunt tortor aliquam
-                        nulla facilisi cras
-                        fermentum odio.</p>
-                </div>
-                <a class="button benefbutton linkedin smalltext" href="#"><i class="fa-brands fa-linkedin"></i>Find me
-                    on Linkedin</a>
+            </div>
         </section>
-            
+
         <section class="even">
             <div class="container flex textcenter">
-            <h5 class="sSize smalltext white textcenter">GET STARTED</h5>
-            <p class="actionbio white bold">Simple, Trasparent Pricing</p>
-            <h2 class="calltoactiontitle">It's Free!</h2>
-            <p class="smalltext white">We'ree still in beta and we will be for awhile.
-                As we add more functionatity, we'll look into
-                other plans with more controls.</p>
+                <h5 class="sSize smalltext white textcenter">GET STARTED</h5>
+                <p class="actionbio white bold">Simple, Trasparent Pricing</p>
+                <h2 class="calltoactiontitle">It's Free!</h2>
+                <p class="smalltext white">We'ree still in beta and we will be for awhile.
+                    As we add more functionatity, we'll look into
+                    other plans with more controls.</p>
                 <a href="#" class="textcenter getstarted">Get Started</a>
                 <p class="white">Copyright 2021 Boolean • Classe XX • <a class="white" href="#">Privacy
-                    policy</a></p>
-                </div>
+                        policy</a></p>
+            </div>
         </section>
     </main>
     <footer>
         <div class="container white textcenter">
             <p class="mb80">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Commodi maiores minima vitae vero nulla pariatur impedit!</p>
-                <p><a href="#" class="violet">Lorem Ipsum</a> scelerisque mauris pellentesque <a href="#" class="violet">Boolean Carrers</a>
+            <p><a href="#" class="violet">Lorem Ipsum</a> scelerisque mauris pellentesque <a href="#"
+                    class="violet">Boolean Carrers</a>
         </div>
     </footer>
 </body>

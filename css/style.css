@@ -13,7 +13,6 @@
     --bg-lightblue: #B5DDFF;
     --darkfooter: #333333;
     --accentcolor: #FDC15F;
-
 }
 
 html {
@@ -38,6 +37,10 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 100px;
+}
+
+.navflex {
+    display: none;
 }
 
 main {
@@ -76,7 +79,6 @@ section {
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
-
 }
 
 #demo {
@@ -96,9 +98,7 @@ section {
     font-weight: bold;
     color: var(--textgreycolor);
     line-height: 24px;
-
 }
-
 
 .cardimg {
     display: flex;
@@ -126,7 +126,6 @@ section {
 .button i {
     margin-right: 4px;
 }
-
 
 .icon {
     font-size: 5rem;
@@ -253,9 +252,7 @@ section {
     font-size: 1.2rem;
     letter-spacing: 2px;
     font-weight: bold;
-
 }
-
 
 .smalltitle {
     font-size: 1rem;
@@ -309,12 +306,9 @@ section {
     font-weight: bold;
 }
 
-
-
 /* QUOTES ON IMG */
 .nomargin {
     margin: 0;
-
 }
 
 .quotes {
@@ -330,24 +324,26 @@ section {
     font-size: 13rem;
 }
 
-/* MOBILE FIRST */
 @media only screen and (min-width: 768px) {
-
     .container {
         max-width: 900px;
         padding: 17px;
     }
 
     .cardimg {
-        justify-content: center;
+        display: inline-block;
+    }
+
+    .cardimg img {
+        width: 75%;
+        display: block;
     }
 
     .flexcards {
         display: flex;
         flex-flow: row wrap;
-        justify-content: flex-start;
+        justify-content: center;
         gap: 10px;
-
 
     }
 
@@ -358,9 +354,109 @@ section {
 
     #appstore {
         align-self: flex-start;
+        padding: 10px 80px;
     }
 
-    .card {
+    #contentleft {
+        margin: 0;
+    }
+
+    .maincards {
         width: calc(100% / 3 - 10px);
     }
+
+    .planningtitle {
+        font-size: 5rem;
+    }
+
+    .dflex {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .staff {
+        width: 73%;
+    }
+
+    .flexstaff {
+        display: flex;
+        align-items: center;
+    }
+
+    .benefitscards {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .flexceo {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 100px;
+    }
+
+    .singlecardb {
+        width: calc(100% / 2 - 30px);
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    .singlecardb {
+        width: calc(100% / 3 - 30px);
+    }
+
+    .strflex {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .strategicontent {
+        width: 60%;
+    }
+
+    .strategicontent img {
+        width: 85%;
+    }
+
+    .cardstrategic {
+        width: 45%;
+        margin-top: 80px;
+    }
+
+    .hambmenu {
+        display: none;
+    }
+
+    ul li {
+        display: inline-block;
+        padding: 10px;
+
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: var(--primarylight);
+        font-size: 1.1rem;
+    }
+
+    .navflex {
+        display: flex;
+        flex-flow: row;
+    }
+
+    .buttonstart {
+        color: black;
+        padding: 8px;
+        background-color: var(--primarylight);
+        border-radius: 15px;
+    }
+
 }
