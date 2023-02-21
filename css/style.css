@@ -251,6 +251,17 @@ section {
     font-weight: 300;
 }
 
+.titlexl {
+    font-size:3rem;
+}
+
+.lh35 {
+    line-height: 35px;
+}
+
+.nomargin {
+    margin:0;
+}
 
 /* MOBILE FIRST */
 @media only screen and (min-width: 768px) {
