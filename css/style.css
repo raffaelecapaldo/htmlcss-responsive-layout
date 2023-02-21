@@ -157,6 +157,15 @@ section {
     font-weight: bold;
 }
 
+.actionbio {
+    font-size:2.5rem;
+}
+
+.calltoactiontitle{
+    color:var(--accentcolor);
+    font-size:4rem;
+}
+
 .bg-white {
     background-color: var(--primarylight);
 }
@@ -230,6 +239,19 @@ section {
     padding:8px 25px 8px 25px;
 }
 
+.getstarted {
+ background-color: var(--primarylight);
+ border-radius:50px;
+ align-self: flex-start;
+ margin:0 auto;
+ padding:20px 80px 20px 80px;
+ text-decoration: none;
+ font-size:1.2rem;
+ letter-spacing: 2px;
+ font-weight: bold;
+
+}
+
 
 .smalltitle {
     font-size: 1rem;
@@ -270,6 +292,15 @@ section {
 .lh35 {
     line-height: 35px;
 }
+
+.sSize {
+    font-size:1.3rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
 
 
 /* QUOTES ON IMG */
