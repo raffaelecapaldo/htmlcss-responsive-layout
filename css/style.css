@@ -30,7 +30,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    z-index:10000;
+    z-index: 10000;
 }
 
 nav {
@@ -63,7 +63,7 @@ section {
 .container {
     max-width: 600px;
     margin: 0 auto;
-    padding:35px;
+    padding: 35px;
 }
 
 .hambmenu i {
@@ -79,8 +79,8 @@ section {
 
 }
 
-.card:not(#demo) {
-    padding-bottom: 20px;
+#demo {
+    padding-bottom: 0px;
 }
 
 .card img {
@@ -117,10 +117,10 @@ section {
 
 .benefbutton {
     background-color: var(--violet);
-    color:var(--primarylight);
+    color: var(--primarylight);
     align-self: baseline;
-    padding:10px 40px 10px 40px;
-    border-radius:15px;
+    padding: 10px 40px 10px 40px;
+    border-radius: 15px;
 }
 
 .button i {
@@ -162,12 +162,12 @@ section {
 }
 
 .actionbio {
-    font-size:2.5rem;
+    font-size: 2.5rem;
 }
 
-.calltoactiontitle{
-    color:var(--accentcolor);
-    font-size:4rem;
+.calltoactiontitle {
+    color: var(--accentcolor);
+    font-size: 4rem;
 }
 
 .bg-white {
@@ -233,26 +233,26 @@ section {
 }
 
 .number {
-    font-size:3rem;
+    font-size: 3rem;
     font-weight: bold;
 }
 
-.linkedin
-{
-    letter-spacing: 0px;;
-    padding:8px 25px 8px 25px;
+.linkedin {
+    letter-spacing: 0px;
+    ;
+    padding: 8px 25px 8px 25px;
 }
 
 .getstarted {
- background-color: var(--primarylight);
- border-radius:50px;
- align-self: flex-start;
- margin:0 auto;
- padding:20px 80px 20px 80px;
- text-decoration: none;
- font-size:1.2rem;
- letter-spacing: 2px;
- font-weight: bold;
+    background-color: var(--primarylight);
+    border-radius: 50px;
+    align-self: flex-start;
+    margin: 0 auto;
+    padding: 20px 80px 20px 80px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    font-weight: bold;
 
 }
 
@@ -282,11 +282,11 @@ section {
 }
 
 .mb80 {
-    margin-bottom:80px;
+    margin-bottom: 80px;
 }
 
 .p20 {
-    padding:20px;
+    padding: 20px;
 }
 
 .smalltext {
@@ -294,7 +294,7 @@ section {
 }
 
 .titlexl {
-    font-size:3rem;
+    font-size: 3rem;
 }
 
 .lh35 {
@@ -302,7 +302,7 @@ section {
 }
 
 .sSize {
-    font-size:1.3rem;
+    font-size: 1.3rem;
 }
 
 .bold {
@@ -313,21 +313,54 @@ section {
 
 /* QUOTES ON IMG */
 .nomargin {
-    margin:0;
-    
+    margin: 0;
+
 }
 
 .quotes {
-    position:relative;
+    position: relative;
     width: 200px;
     height: 200px;
 }
 
 .quotes span {
-    position:absolute;
-    top:-47px;
-    left:131px;
-    font-size:13rem;
+    position: absolute;
+    top: -47px;
+    left: 131px;
+    font-size: 13rem;
 }
+
 /* MOBILE FIRST */
 @media only screen and (min-width: 768px) {
+
+    .container {
+        max-width: 900px;
+        padding: 17px;
+    }
+
+    .cardimg {
+        justify-content: center;
+    }
+
+    .flexcards {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        gap: 10px;
+
+
+    }
+
+    #demo {
+        width: calc(100% / 3 * 2 - 10px);
+        justify-content: flex-start;
+    }
+
+    #appstore {
+        align-self: flex-start;
+    }
+
+    .card {
+        width: calc(100% / 3 - 10px);
+    }
+}
